@@ -9,25 +9,147 @@
 /* Begin PBXBuildFile section */
 		602FF8F71DECA73F007F29EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF8F61DECA73F007F29EB /* main.m */; };
 		602FF8FA1DECA73F007F29EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF8F91DECA73F007F29EB /* AppDelegate.m */; };
-		602FF8FD1DECA73F007F29EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF8FC1DECA73F007F29EB /* ViewController.m */; };
 		602FF9001DECA73F007F29EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602FF8FE1DECA73F007F29EB /* Main.storyboard */; };
 		602FF9031DECA73F007F29EB /* PizzaDemo2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9011DECA73F007F29EB /* PizzaDemo2.xcdatamodeld */; };
 		602FF9051DECA73F007F29EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 602FF9041DECA73F007F29EB /* Assets.xcassets */; };
 		602FF9081DECA73F007F29EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602FF9061DECA73F007F29EB /* LaunchScreen.storyboard */; };
+		602FF9121DECA7BB007F29EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9111DECA7BB007F29EB /* SWRevealViewController.m */; };
+		602FF9201DECA7D5007F29EB /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 602FF9141DECA7D5007F29EB /* facebook.png */; };
+		602FF9211DECA7D5007F29EB /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 602FF9151DECA7D5007F29EB /* Home.png */; };
+		602FF9221DECA7D5007F29EB /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 602FF9161DECA7D5007F29EB /* Location.png */; };
+		602FF9231DECA7D5007F29EB /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 602FF9171DECA7D5007F29EB /* menu.png */; };
+		602FF9241DECA7D5007F29EB /* Options.png in Resources */ = {isa = PBXBuildFile; fileRef = 602FF9181DECA7D5007F29EB /* Options.png */; };
+		602FF9251DECA7D5007F29EB /* Orderr.png in Resources */ = {isa = PBXBuildFile; fileRef = 602FF9191DECA7D5007F29EB /* Orderr.png */; };
+		602FF9261DECA7D5007F29EB /* Personal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 602FF91A1DECA7D5007F29EB /* Personal.jpeg */; };
+		602FF92A1DECA7D5007F29EB /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 602FF91E1DECA7D5007F29EB /* search.png */; };
+		602FF92B1DECA7D5007F29EB /* YourOrders.png in Resources */ = {isa = PBXBuildFile; fileRef = 602FF91F1DECA7D5007F29EB /* YourOrders.png */; };
+		602FF9461DECA7EA007F29EB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF92E1DECA7EA007F29EB /* NSObject+SBJson.m */; };
+		602FF9471DECA7EA007F29EB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9311DECA7EA007F29EB /* SBJsonParser.m */; };
+		602FF9481DECA7EA007F29EB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9331DECA7EA007F29EB /* SBJsonStreamParser.m */; };
+		602FF9491DECA7EA007F29EB /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9351DECA7EA007F29EB /* SBJsonStreamParserAccumulator.m */; };
+		602FF94A1DECA7EA007F29EB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9371DECA7EA007F29EB /* SBJsonStreamParserAdapter.m */; };
+		602FF94B1DECA7EA007F29EB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9391DECA7EA007F29EB /* SBJsonStreamParserState.m */; };
+		602FF94C1DECA7EA007F29EB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF93B1DECA7EA007F29EB /* SBJsonStreamWriter.m */; };
+		602FF94D1DECA7EA007F29EB /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF93D1DECA7EA007F29EB /* SBJsonStreamWriterAccumulator.m */; };
+		602FF94E1DECA7EA007F29EB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF93F1DECA7EA007F29EB /* SBJsonStreamWriterState.m */; };
+		602FF94F1DECA7EA007F29EB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9411DECA7EA007F29EB /* SBJsonTokeniser.m */; };
+		602FF9501DECA7EA007F29EB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9431DECA7EA007F29EB /* SBJsonUTF8Stream.m */; };
+		602FF9511DECA7EA007F29EB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FF9451DECA7EA007F29EB /* SBJsonWriter.m */; };
+		605922D11E51AE2D00B313AD /* pizza1.png in Resources */ = {isa = PBXBuildFile; fileRef = 605922CF1E51AE2D00B313AD /* pizza1.png */; };
+		605922D21E51AE2D00B313AD /* pizza2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 605922D01E51AE2D00B313AD /* pizza2.jpg */; };
+		605BE2921E7A989A00E55BBB /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605BE2911E7A989A00E55BBB /* OrderViewController.m */; };
+		605BE2951E7EA76500E55BBB /* OrderDetail&PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605BE2941E7EA76500E55BBB /* OrderDetail&PaymentViewController.m */; };
+		605BE3101E8086E700E55BBB /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 605BE3001E8086E700E55BBB /* bitstream.c */; };
+		605BE3111E8086E700E55BBB /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 605BE3021E8086E700E55BBB /* mask.c */; };
+		605BE3121E8086E700E55BBB /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 605BE3041E8086E700E55BBB /* qrencode.c */; };
+		605BE3131E8086E700E55BBB /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 605BE3061E8086E700E55BBB /* qrinput.c */; };
+		605BE3141E8086E700E55BBB /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 605BE3081E8086E700E55BBB /* qrspec.c */; };
+		605BE3151E8086E700E55BBB /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 605BE30A1E8086E700E55BBB /* rscode.c */; };
+		605BE3161E8086E700E55BBB /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 605BE30C1E8086E700E55BBB /* split.c */; };
+		605BE3171E8086E700E55BBB /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 605BE30F1E8086E700E55BBB /* UIImage+MDQRCode.m */; };
+		605BE3191E80A53B00E55BBB /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 605BE3181E80A53B00E55BBB /* back.jpg */; };
+		605BE31B1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 605BE31A1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg */; };
+		6072B9E01E91874C0011D00B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6072B9DF1E91874C0011D00B /* CoreLocation.framework */; };
+		60ABC3161E5C669700165DB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60ABC3151E5C669700165DB2 /* GoogleService-Info.plist */; };
+		60FFF2BD1DECAD1B00835D51 /* SideBarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FFF2BC1DECAD1B00835D51 /* SideBarTableViewController.m */; };
+		60FFF2C01DECAD3500835D51 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FFF2BF1DECAD3500835D51 /* HomeViewController.m */; };
+		60FFF2C31DECAD5300835D51 /* YourOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FFF2C21DECAD5300835D51 /* YourOrdersViewController.m */; };
+		60FFF2C61DECAD8000835D51 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FFF2C51DECAD8000835D51 /* PersonalViewController.m */; };
+		60FFF2C91DECAD9600835D51 /* LocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FFF2C81DECAD9600835D51 /* LocationsViewController.m */; };
+		60FFF2D21DECB0C800835D51 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FFF2D11DECB0C800835D51 /* MapKit.framework */; };
+		60FFF2D91DECD05900835D51 /* chickpea-pizza-pate-0074.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60FFF2D81DECD05900835D51 /* chickpea-pizza-pate-0074.jpg */; };
+		60FFF2DB1DECD4FD00835D51 /* opener.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60FFF2DA1DECD4FD00835D51 /* opener.jpg */; };
+		78534F533D602CF78BB9F7A0 /* libPods-PizzaDemo2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E1D2C7270827CE504E90D8 /* libPods-PizzaDemo2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		026D78561D2147EE4B8BC9A3 /* Pods-PizzaDemo2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemo2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemo2/Pods-PizzaDemo2.debug.xcconfig"; sourceTree = "<group>"; };
+		134878ED9123412506C6D973 /* Pods-PizzaDemo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemo2.release.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemo2/Pods-PizzaDemo2.release.xcconfig"; sourceTree = "<group>"; };
 		602FF8F21DECA73F007F29EB /* PizzaDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		602FF8F61DECA73F007F29EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		602FF8F81DECA73F007F29EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		602FF8F91DECA73F007F29EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		602FF8FB1DECA73F007F29EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		602FF8FC1DECA73F007F29EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		602FF8FF1DECA73F007F29EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		602FF9021DECA73F007F29EB /* PizzaDemo2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PizzaDemo2.xcdatamodel; sourceTree = "<group>"; };
 		602FF9041DECA73F007F29EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		602FF9071DECA73F007F29EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		602FF9091DECA73F007F29EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		602FF9101DECA7BB007F29EB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = PizzaDemo2/SWRevealViewController.h; sourceTree = "<group>"; };
+		602FF9111DECA7BB007F29EB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = PizzaDemo2/SWRevealViewController.m; sourceTree = "<group>"; };
+		602FF9141DECA7D5007F29EB /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = PizzaDemo2/images/facebook.png; sourceTree = "<group>"; };
+		602FF9151DECA7D5007F29EB /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = PizzaDemo2/images/Home.png; sourceTree = "<group>"; };
+		602FF9161DECA7D5007F29EB /* Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Location.png; path = PizzaDemo2/images/Location.png; sourceTree = "<group>"; };
+		602FF9171DECA7D5007F29EB /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = PizzaDemo2/images/menu.png; sourceTree = "<group>"; };
+		602FF9181DECA7D5007F29EB /* Options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Options.png; path = PizzaDemo2/images/Options.png; sourceTree = "<group>"; };
+		602FF9191DECA7D5007F29EB /* Orderr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Orderr.png; path = PizzaDemo2/images/Orderr.png; sourceTree = "<group>"; };
+		602FF91A1DECA7D5007F29EB /* Personal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Personal.jpeg; path = PizzaDemo2/images/Personal.jpeg; sourceTree = "<group>"; };
+		602FF91E1DECA7D5007F29EB /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search.png; path = PizzaDemo2/images/search.png; sourceTree = "<group>"; };
+		602FF91F1DECA7D5007F29EB /* YourOrders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YourOrders.png; path = PizzaDemo2/images/YourOrders.png; sourceTree = "<group>"; };
+		602FF92D1DECA7EA007F29EB /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/NSObject+SBJson.h"; sourceTree = "<group>"; };
+		602FF92E1DECA7EA007F29EB /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/NSObject+SBJson.m"; sourceTree = "<group>"; };
+		602FF92F1DECA7EA007F29EB /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJson.h"; sourceTree = "<group>"; };
+		602FF9301DECA7EA007F29EB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonParser.h"; sourceTree = "<group>"; };
+		602FF9311DECA7EA007F29EB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonParser.m"; sourceTree = "<group>"; };
+		602FF9321DECA7EA007F29EB /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamParser.h"; sourceTree = "<group>"; };
+		602FF9331DECA7EA007F29EB /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamParser.m"; sourceTree = "<group>"; };
+		602FF9341DECA7EA007F29EB /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamParserAccumulator.h"; sourceTree = "<group>"; };
+		602FF9351DECA7EA007F29EB /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamParserAccumulator.m"; sourceTree = "<group>"; };
+		602FF9361DECA7EA007F29EB /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamParserAdapter.h"; sourceTree = "<group>"; };
+		602FF9371DECA7EA007F29EB /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamParserAdapter.m"; sourceTree = "<group>"; };
+		602FF9381DECA7EA007F29EB /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamParserState.h"; sourceTree = "<group>"; };
+		602FF9391DECA7EA007F29EB /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamParserState.m"; sourceTree = "<group>"; };
+		602FF93A1DECA7EA007F29EB /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamWriter.h"; sourceTree = "<group>"; };
+		602FF93B1DECA7EA007F29EB /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamWriter.m"; sourceTree = "<group>"; };
+		602FF93C1DECA7EA007F29EB /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamWriterAccumulator.h"; sourceTree = "<group>"; };
+		602FF93D1DECA7EA007F29EB /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamWriterAccumulator.m"; sourceTree = "<group>"; };
+		602FF93E1DECA7EA007F29EB /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamWriterState.h"; sourceTree = "<group>"; };
+		602FF93F1DECA7EA007F29EB /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonStreamWriterState.m"; sourceTree = "<group>"; };
+		602FF9401DECA7EA007F29EB /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonTokeniser.h"; sourceTree = "<group>"; };
+		602FF9411DECA7EA007F29EB /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonTokeniser.m"; sourceTree = "<group>"; };
+		602FF9421DECA7EA007F29EB /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonUTF8Stream.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonUTF8Stream.h"; sourceTree = "<group>"; };
+		602FF9431DECA7EA007F29EB /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonUTF8Stream.m"; sourceTree = "<group>"; };
+		602FF9441DECA7EA007F29EB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonWriter.h"; sourceTree = "<group>"; };
+		602FF9451DECA7EA007F29EB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "PizzaDemo2/SBJson_3.1.1 3/Classes/SBJsonWriter.m"; sourceTree = "<group>"; };
+		605922CF1E51AE2D00B313AD /* pizza1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pizza1.png; path = PizzaDemo2/images/pizza1.png; sourceTree = "<group>"; };
+		605922D01E51AE2D00B313AD /* pizza2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pizza2.jpg; path = PizzaDemo2/images/pizza2.jpg; sourceTree = "<group>"; };
+		605BE2901E7A989A00E55BBB /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		605BE2911E7A989A00E55BBB /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		605BE2931E7EA76500E55BBB /* OrderDetail&PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OrderDetail&PaymentViewController.h"; sourceTree = "<group>"; };
+		605BE2941E7EA76500E55BBB /* OrderDetail&PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OrderDetail&PaymentViewController.m"; sourceTree = "<group>"; };
+		605BE3001E8086E700E55BBB /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		605BE3011E8086E700E55BBB /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		605BE3021E8086E700E55BBB /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		605BE3031E8086E700E55BBB /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		605BE3041E8086E700E55BBB /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		605BE3051E8086E700E55BBB /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		605BE3061E8086E700E55BBB /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		605BE3071E8086E700E55BBB /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		605BE3081E8086E700E55BBB /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		605BE3091E8086E700E55BBB /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		605BE30A1E8086E700E55BBB /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		605BE30B1E8086E700E55BBB /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		605BE30C1E8086E700E55BBB /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		605BE30D1E8086E700E55BBB /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		605BE30E1E8086E700E55BBB /* UIImage+MDQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MDQRCode.h"; sourceTree = "<group>"; };
+		605BE30F1E8086E700E55BBB /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
+		605BE3181E80A53B00E55BBB /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = back.jpg; path = PizzaDemo2/images/back.jpg; sourceTree = "<group>"; };
+		605BE31A1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg"; path = "PizzaDemo2/images/pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg"; sourceTree = "<group>"; };
+		6072B9DF1E91874C0011D00B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		60ABC3151E5C669700165DB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60FFF2BB1DECAD1B00835D51 /* SideBarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarTableViewController.h; sourceTree = "<group>"; };
+		60FFF2BC1DECAD1B00835D51 /* SideBarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarTableViewController.m; sourceTree = "<group>"; };
+		60FFF2BE1DECAD3500835D51 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		60FFF2BF1DECAD3500835D51 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		60FFF2C11DECAD5300835D51 /* YourOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourOrdersViewController.h; sourceTree = "<group>"; };
+		60FFF2C21DECAD5300835D51 /* YourOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourOrdersViewController.m; sourceTree = "<group>"; };
+		60FFF2C41DECAD8000835D51 /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
+		60FFF2C51DECAD8000835D51 /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		60FFF2C71DECAD9600835D51 /* LocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationsViewController.h; sourceTree = "<group>"; };
+		60FFF2C81DECAD9600835D51 /* LocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationsViewController.m; sourceTree = "<group>"; };
+		60FFF2D11DECB0C800835D51 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		60FFF2D81DECD05900835D51 /* chickpea-pizza-pate-0074.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "chickpea-pizza-pate-0074.jpg"; path = "PizzaDemo2/images/chickpea-pizza-pate-0074.jpg"; sourceTree = "<group>"; };
+		60FFF2DA1DECD4FD00835D51 /* opener.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = opener.jpg; path = PizzaDemo2/images/opener.jpg; sourceTree = "<group>"; };
+		D9E1D2C7270827CE504E90D8 /* libPods-PizzaDemo2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PizzaDemo2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +157,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6072B9E01E91874C0011D00B /* CoreLocation.framework in Frameworks */,
+				60FFF2D21DECB0C800835D51 /* MapKit.framework in Frameworks */,
+				78534F533D602CF78BB9F7A0 /* libPods-PizzaDemo2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +169,14 @@
 		602FF8E91DECA73F007F29EB = {
 			isa = PBXGroup;
 			children = (
+				602FF9521DECA7FF007F29EB /* Storyboard */,
+				602FF92C1DECA7DA007F29EB /* json */,
+				602FF9131DECA7C6007F29EB /* images */,
+				602FF90F1DECA7B0007F29EB /* lib */,
 				602FF8F41DECA73F007F29EB /* PizzaDemo2 */,
 				602FF8F31DECA73F007F29EB /* Products */,
+				60FFF2D01DECB0C700835D51 /* Frameworks */,
+				87B5B75A6D71055D4F9420D2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +191,22 @@
 		602FF8F41DECA73F007F29EB /* PizzaDemo2 */ = {
 			isa = PBXGroup;
 			children = (
+				60FFF2BB1DECAD1B00835D51 /* SideBarTableViewController.h */,
+				60FFF2BC1DECAD1B00835D51 /* SideBarTableViewController.m */,
+				60FFF2BE1DECAD3500835D51 /* HomeViewController.h */,
+				60FFF2BF1DECAD3500835D51 /* HomeViewController.m */,
+				60FFF2C11DECAD5300835D51 /* YourOrdersViewController.h */,
+				60FFF2C21DECAD5300835D51 /* YourOrdersViewController.m */,
+				605BE2931E7EA76500E55BBB /* OrderDetail&PaymentViewController.h */,
+				605BE2941E7EA76500E55BBB /* OrderDetail&PaymentViewController.m */,
+				60FFF2C41DECAD8000835D51 /* PersonalViewController.h */,
+				60FFF2C51DECAD8000835D51 /* PersonalViewController.m */,
+				60FFF2C71DECAD9600835D51 /* LocationsViewController.h */,
+				60FFF2C81DECAD9600835D51 /* LocationsViewController.m */,
+				605BE2901E7A989A00E55BBB /* OrderViewController.h */,
+				605BE2911E7A989A00E55BBB /* OrderViewController.m */,
 				602FF8F81DECA73F007F29EB /* AppDelegate.h */,
 				602FF8F91DECA73F007F29EB /* AppDelegate.m */,
-				602FF8FB1DECA73F007F29EB /* ViewController.h */,
-				602FF8FC1DECA73F007F29EB /* ViewController.m */,
-				602FF8FE1DECA73F007F29EB /* Main.storyboard */,
-				602FF9041DECA73F007F29EB /* Assets.xcassets */,
-				602FF9061DECA73F007F29EB /* LaunchScreen.storyboard */,
-				602FF9091DECA73F007F29EB /* Info.plist */,
-				602FF9011DECA73F007F29EB /* PizzaDemo2.xcdatamodeld */,
 				602FF8F51DECA73F007F29EB /* Supporting Files */,
 			);
 			path = PizzaDemo2;
@@ -77,9 +215,137 @@
 		602FF8F51DECA73F007F29EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				602FF9041DECA73F007F29EB /* Assets.xcassets */,
+				60ABC3151E5C669700165DB2 /* GoogleService-Info.plist */,
+				602FF9091DECA73F007F29EB /* Info.plist */,
+				602FF9011DECA73F007F29EB /* PizzaDemo2.xcdatamodeld */,
 				602FF8F61DECA73F007F29EB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		602FF90F1DECA7B0007F29EB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				605BE2FE1E8086E700E55BBB /* QR */,
+				602FF9101DECA7BB007F29EB /* SWRevealViewController.h */,
+				602FF9111DECA7BB007F29EB /* SWRevealViewController.m */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		602FF9131DECA7C6007F29EB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				605BE31A1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg */,
+				605BE3181E80A53B00E55BBB /* back.jpg */,
+				602FF9141DECA7D5007F29EB /* facebook.png */,
+				602FF9151DECA7D5007F29EB /* Home.png */,
+				602FF9161DECA7D5007F29EB /* Location.png */,
+				602FF9171DECA7D5007F29EB /* menu.png */,
+				602FF9181DECA7D5007F29EB /* Options.png */,
+				602FF9191DECA7D5007F29EB /* Orderr.png */,
+				602FF91A1DECA7D5007F29EB /* Personal.jpeg */,
+				602FF91E1DECA7D5007F29EB /* search.png */,
+				602FF91F1DECA7D5007F29EB /* YourOrders.png */,
+				60FFF2D81DECD05900835D51 /* chickpea-pizza-pate-0074.jpg */,
+				605922CF1E51AE2D00B313AD /* pizza1.png */,
+				605922D01E51AE2D00B313AD /* pizza2.jpg */,
+				60FFF2DA1DECD4FD00835D51 /* opener.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		602FF92C1DECA7DA007F29EB /* json */ = {
+			isa = PBXGroup;
+			children = (
+				602FF92D1DECA7EA007F29EB /* NSObject+SBJson.h */,
+				602FF92E1DECA7EA007F29EB /* NSObject+SBJson.m */,
+				602FF92F1DECA7EA007F29EB /* SBJson.h */,
+				602FF9301DECA7EA007F29EB /* SBJsonParser.h */,
+				602FF9311DECA7EA007F29EB /* SBJsonParser.m */,
+				602FF9321DECA7EA007F29EB /* SBJsonStreamParser.h */,
+				602FF9331DECA7EA007F29EB /* SBJsonStreamParser.m */,
+				602FF9341DECA7EA007F29EB /* SBJsonStreamParserAccumulator.h */,
+				602FF9351DECA7EA007F29EB /* SBJsonStreamParserAccumulator.m */,
+				602FF9361DECA7EA007F29EB /* SBJsonStreamParserAdapter.h */,
+				602FF9371DECA7EA007F29EB /* SBJsonStreamParserAdapter.m */,
+				602FF9381DECA7EA007F29EB /* SBJsonStreamParserState.h */,
+				602FF9391DECA7EA007F29EB /* SBJsonStreamParserState.m */,
+				602FF93A1DECA7EA007F29EB /* SBJsonStreamWriter.h */,
+				602FF93B1DECA7EA007F29EB /* SBJsonStreamWriter.m */,
+				602FF93C1DECA7EA007F29EB /* SBJsonStreamWriterAccumulator.h */,
+				602FF93D1DECA7EA007F29EB /* SBJsonStreamWriterAccumulator.m */,
+				602FF93E1DECA7EA007F29EB /* SBJsonStreamWriterState.h */,
+				602FF93F1DECA7EA007F29EB /* SBJsonStreamWriterState.m */,
+				602FF9401DECA7EA007F29EB /* SBJsonTokeniser.h */,
+				602FF9411DECA7EA007F29EB /* SBJsonTokeniser.m */,
+				602FF9421DECA7EA007F29EB /* SBJsonUTF8Stream.h */,
+				602FF9431DECA7EA007F29EB /* SBJsonUTF8Stream.m */,
+				602FF9441DECA7EA007F29EB /* SBJsonWriter.h */,
+				602FF9451DECA7EA007F29EB /* SBJsonWriter.m */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		602FF9521DECA7FF007F29EB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				602FF8FE1DECA73F007F29EB /* Main.storyboard */,
+				602FF9061DECA73F007F29EB /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		605BE2FE1E8086E700E55BBB /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				605BE2FF1E8086E700E55BBB /* libqrencode */,
+				605BE30E1E8086E700E55BBB /* UIImage+MDQRCode.h */,
+				605BE30F1E8086E700E55BBB /* UIImage+MDQRCode.m */,
+			);
+			name = QR;
+			path = PizzaDemo2/QR;
+			sourceTree = "<group>";
+		};
+		605BE2FF1E8086E700E55BBB /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				605BE3001E8086E700E55BBB /* bitstream.c */,
+				605BE3011E8086E700E55BBB /* bitstream.h */,
+				605BE3021E8086E700E55BBB /* mask.c */,
+				605BE3031E8086E700E55BBB /* mask.h */,
+				605BE3041E8086E700E55BBB /* qrencode.c */,
+				605BE3051E8086E700E55BBB /* qrencode.h */,
+				605BE3061E8086E700E55BBB /* qrinput.c */,
+				605BE3071E8086E700E55BBB /* qrinput.h */,
+				605BE3081E8086E700E55BBB /* qrspec.c */,
+				605BE3091E8086E700E55BBB /* qrspec.h */,
+				605BE30A1E8086E700E55BBB /* rscode.c */,
+				605BE30B1E8086E700E55BBB /* rscode.h */,
+				605BE30C1E8086E700E55BBB /* split.c */,
+				605BE30D1E8086E700E55BBB /* split.h */,
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
+		60FFF2D01DECB0C700835D51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6072B9DF1E91874C0011D00B /* CoreLocation.framework */,
+				60FFF2D11DECB0C800835D51 /* MapKit.framework */,
+				D9E1D2C7270827CE504E90D8 /* libPods-PizzaDemo2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87B5B75A6D71055D4F9420D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				026D78561D2147EE4B8BC9A3 /* Pods-PizzaDemo2.debug.xcconfig */,
+				134878ED9123412506C6D973 /* Pods-PizzaDemo2.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +355,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 602FF90C1DECA73F007F29EB /* Build configuration list for PBXNativeTarget "PizzaDemo2" */;
 			buildPhases = (
+				5769E6B2489BF6807963911D /* [CP] Check Pods Manifest.lock */,
 				602FF8EE1DECA73F007F29EB /* Sources */,
 				602FF8EF1DECA73F007F29EB /* Frameworks */,
 				602FF8F01DECA73F007F29EB /* Resources */,
+				5538FA020C59D999FFCA406A /* [CP] Embed Pods Frameworks */,
+				F652563B845699F1BC17E51F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -115,6 +384,14 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3J6ALY6Y36;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -142,22 +419,113 @@
 			buildActionMask = 2147483647;
 			files = (
 				602FF9081DECA73F007F29EB /* LaunchScreen.storyboard in Resources */,
+				602FF92A1DECA7D5007F29EB /* search.png in Resources */,
+				602FF9201DECA7D5007F29EB /* facebook.png in Resources */,
+				602FF92B1DECA7D5007F29EB /* YourOrders.png in Resources */,
+				605BE3191E80A53B00E55BBB /* back.jpg in Resources */,
+				602FF9241DECA7D5007F29EB /* Options.png in Resources */,
+				602FF9261DECA7D5007F29EB /* Personal.jpeg in Resources */,
+				602FF9211DECA7D5007F29EB /* Home.png in Resources */,
 				602FF9051DECA73F007F29EB /* Assets.xcassets in Resources */,
+				605BE31B1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg in Resources */,
+				605922D11E51AE2D00B313AD /* pizza1.png in Resources */,
+				605922D21E51AE2D00B313AD /* pizza2.jpg in Resources */,
+				602FF9231DECA7D5007F29EB /* menu.png in Resources */,
+				602FF9251DECA7D5007F29EB /* Orderr.png in Resources */,
+				60ABC3161E5C669700165DB2 /* GoogleService-Info.plist in Resources */,
+				60FFF2DB1DECD4FD00835D51 /* opener.jpg in Resources */,
+				602FF9221DECA7D5007F29EB /* Location.png in Resources */,
+				60FFF2D91DECD05900835D51 /* chickpea-pizza-pate-0074.jpg in Resources */,
 				602FF9001DECA73F007F29EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5538FA020C59D999FFCA406A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo2/Pods-PizzaDemo2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5769E6B2489BF6807963911D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F652563B845699F1BC17E51F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo2/Pods-PizzaDemo2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		602FF8EE1DECA73F007F29EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605BE3141E8086E700E55BBB /* qrspec.c in Sources */,
+				602FF94B1DECA7EA007F29EB /* SBJsonStreamParserState.m in Sources */,
+				605BE3131E8086E700E55BBB /* qrinput.c in Sources */,
+				602FF9471DECA7EA007F29EB /* SBJsonParser.m in Sources */,
+				602FF94A1DECA7EA007F29EB /* SBJsonStreamParserAdapter.m in Sources */,
+				60FFF2BD1DECAD1B00835D51 /* SideBarTableViewController.m in Sources */,
 				602FF9031DECA73F007F29EB /* PizzaDemo2.xcdatamodeld in Sources */,
-				602FF8FD1DECA73F007F29EB /* ViewController.m in Sources */,
+				60FFF2C01DECAD3500835D51 /* HomeViewController.m in Sources */,
+				605BE3171E8086E700E55BBB /* UIImage+MDQRCode.m in Sources */,
+				602FF9491DECA7EA007F29EB /* SBJsonStreamParserAccumulator.m in Sources */,
+				605BE2921E7A989A00E55BBB /* OrderViewController.m in Sources */,
+				602FF9121DECA7BB007F29EB /* SWRevealViewController.m in Sources */,
+				605BE3121E8086E700E55BBB /* qrencode.c in Sources */,
+				602FF94E1DECA7EA007F29EB /* SBJsonStreamWriterState.m in Sources */,
+				605BE3151E8086E700E55BBB /* rscode.c in Sources */,
+				602FF94C1DECA7EA007F29EB /* SBJsonStreamWriter.m in Sources */,
+				602FF94D1DECA7EA007F29EB /* SBJsonStreamWriterAccumulator.m in Sources */,
 				602FF8FA1DECA73F007F29EB /* AppDelegate.m in Sources */,
+				605BE3111E8086E700E55BBB /* mask.c in Sources */,
+				602FF94F1DECA7EA007F29EB /* SBJsonTokeniser.m in Sources */,
+				605BE3161E8086E700E55BBB /* split.c in Sources */,
+				602FF9461DECA7EA007F29EB /* NSObject+SBJson.m in Sources */,
 				602FF8F71DECA73F007F29EB /* main.m in Sources */,
+				605BE3101E8086E700E55BBB /* bitstream.c in Sources */,
+				605BE2951E7EA76500E55BBB /* OrderDetail&PaymentViewController.m in Sources */,
+				60FFF2C31DECAD5300835D51 /* YourOrdersViewController.m in Sources */,
+				602FF9481DECA7EA007F29EB /* SBJsonStreamParser.m in Sources */,
+				602FF9501DECA7EA007F29EB /* SBJsonUTF8Stream.m in Sources */,
+				60FFF2C61DECAD8000835D51 /* PersonalViewController.m in Sources */,
+				602FF9511DECA7EA007F29EB /* SBJsonWriter.m in Sources */,
+				60FFF2C91DECAD9600835D51 /* LocationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +538,7 @@
 				602FF8FF1DECA73F007F29EB /* Base */,
 			);
 			name = Main.storyboard;
+			path = PizzaDemo2;
 			sourceTree = "<group>";
 		};
 		602FF9061DECA73F007F29EB /* LaunchScreen.storyboard */ = {
@@ -178,6 +547,7 @@
 				602FF9071DECA73F007F29EB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = PizzaDemo2;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -273,10 +643,13 @@
 		};
 		602FF90D1DECA73F007F29EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026D78561D2147EE4B8BC9A3 /* Pods-PizzaDemo2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3J6ALY6Y36;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PizzaDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chuen.com.PizzaDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,10 +658,13 @@
 		};
 		602FF90E1DECA73F007F29EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134878ED9123412506C6D973 /* Pods-PizzaDemo2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3J6ALY6Y36;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PizzaDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chuen.com.PizzaDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +690,7 @@
 				602FF90E1DECA73F007F29EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

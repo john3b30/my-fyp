@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <GoogleMaps/GoogleMaps.h>
+
+
 
 @interface AppDelegate ()
 
@@ -15,9 +18,13 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [FIRApp configure];
+    // Add any custom logic here.
+    [GMSServices provideAPIKey:@"AIzaSyAmmrqVUAfCvVxWTiNh-ihEqf4s-xmAzJg"];
     return YES;
+    
 }
 
 
