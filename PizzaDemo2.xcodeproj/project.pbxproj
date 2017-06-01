@@ -51,6 +51,17 @@
 		605BE31B1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 605BE31A1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg */; };
 		6072B9E01E91874C0011D00B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6072B9DF1E91874C0011D00B /* CoreLocation.framework */; };
 		60ABC3161E5C669700165DB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60ABC3151E5C669700165DB2 /* GoogleService-Info.plist */; };
+		60D543171EDB446C003A90BA /* b.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 60D543161EDB446C003A90BA /* b.jpeg */; };
+		60D5431A1EDB4716003A90BA /* FoodTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D543191EDB4716003A90BA /* FoodTypeViewController.m */; };
+		60D5431C1EDB5DDA003A90BA /* mong-kok-area-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60D5431B1EDB5DDA003A90BA /* mong-kok-area-2.jpg */; };
+		60D543231EDB7093003A90BA /* I1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60D5431D1EDB7093003A90BA /* I1.jpg */; };
+		60D543241EDB7093003A90BA /* I2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60D5431E1EDB7093003A90BA /* I2.jpg */; };
+		60D543251EDB7093003A90BA /* P1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60D5431F1EDB7093003A90BA /* P1.jpg */; };
+		60D543261EDB7093003A90BA /* P2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60D543201EDB7093003A90BA /* P2.jpg */; };
+		60D543271EDB7093003A90BA /* S1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60D543211EDB7093003A90BA /* S1.jpg */; };
+		60D543281EDB7093003A90BA /* S2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60D543221EDB7093003A90BA /* S2.jpg */; };
+		60D5432B1EDB7956003A90BA /* ou.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 60D543291EDB7956003A90BA /* ou.jpeg */; };
+		60D5432C1EDB7956003A90BA /* PE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60D5432A1EDB7956003A90BA /* PE.jpg */; };
 		60FFF2BD1DECAD1B00835D51 /* SideBarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FFF2BC1DECAD1B00835D51 /* SideBarTableViewController.m */; };
 		60FFF2C01DECAD3500835D51 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FFF2BF1DECAD3500835D51 /* HomeViewController.m */; };
 		60FFF2C31DECAD5300835D51 /* YourOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FFF2C21DECAD5300835D51 /* YourOrdersViewController.m */; };
@@ -136,6 +147,18 @@
 		605BE31A1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg"; path = "PizzaDemo2/images/pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg"; sourceTree = "<group>"; };
 		6072B9DF1E91874C0011D00B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		60ABC3151E5C669700165DB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60D543161EDB446C003A90BA /* b.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = b.jpeg; path = PizzaDemo2/images/b.jpeg; sourceTree = "<group>"; };
+		60D543181EDB4716003A90BA /* FoodTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTypeViewController.h; sourceTree = "<group>"; };
+		60D543191EDB4716003A90BA /* FoodTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTypeViewController.m; sourceTree = "<group>"; };
+		60D5431B1EDB5DDA003A90BA /* mong-kok-area-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mong-kok-area-2.jpg"; path = "PizzaDemo2/images/mong-kok-area-2.jpg"; sourceTree = "<group>"; };
+		60D5431D1EDB7093003A90BA /* I1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = I1.jpg; path = PizzaDemo2/images/I1.jpg; sourceTree = "<group>"; };
+		60D5431E1EDB7093003A90BA /* I2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = I2.jpg; path = PizzaDemo2/images/I2.jpg; sourceTree = "<group>"; };
+		60D5431F1EDB7093003A90BA /* P1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = P1.jpg; path = PizzaDemo2/images/P1.jpg; sourceTree = "<group>"; };
+		60D543201EDB7093003A90BA /* P2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = P2.jpg; path = PizzaDemo2/images/P2.jpg; sourceTree = "<group>"; };
+		60D543211EDB7093003A90BA /* S1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = S1.jpg; path = PizzaDemo2/images/S1.jpg; sourceTree = "<group>"; };
+		60D543221EDB7093003A90BA /* S2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = S2.jpg; path = PizzaDemo2/images/S2.jpg; sourceTree = "<group>"; };
+		60D543291EDB7956003A90BA /* ou.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ou.jpeg; path = PizzaDemo2/images/ou.jpeg; sourceTree = "<group>"; };
+		60D5432A1EDB7956003A90BA /* PE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PE.jpg; path = PizzaDemo2/images/PE.jpg; sourceTree = "<group>"; };
 		60FFF2BB1DECAD1B00835D51 /* SideBarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarTableViewController.h; sourceTree = "<group>"; };
 		60FFF2BC1DECAD1B00835D51 /* SideBarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarTableViewController.m; sourceTree = "<group>"; };
 		60FFF2BE1DECAD3500835D51 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -205,6 +228,8 @@
 				60FFF2C81DECAD9600835D51 /* LocationsViewController.m */,
 				605BE2901E7A989A00E55BBB /* OrderViewController.h */,
 				605BE2911E7A989A00E55BBB /* OrderViewController.m */,
+				60D543181EDB4716003A90BA /* FoodTypeViewController.h */,
+				60D543191EDB4716003A90BA /* FoodTypeViewController.m */,
 				602FF8F81DECA73F007F29EB /* AppDelegate.h */,
 				602FF8F91DECA73F007F29EB /* AppDelegate.m */,
 				602FF8F51DECA73F007F29EB /* Supporting Files */,
@@ -237,6 +262,10 @@
 		602FF9131DECA7C6007F29EB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				60D5431B1EDB5DDA003A90BA /* mong-kok-area-2.jpg */,
+				60D543291EDB7956003A90BA /* ou.jpeg */,
+				60D5432A1EDB7956003A90BA /* PE.jpg */,
+				60D543161EDB446C003A90BA /* b.jpeg */,
 				605BE31A1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg */,
 				605BE3181E80A53B00E55BBB /* back.jpg */,
 				602FF9141DECA7D5007F29EB /* facebook.png */,
@@ -252,6 +281,12 @@
 				605922CF1E51AE2D00B313AD /* pizza1.png */,
 				605922D01E51AE2D00B313AD /* pizza2.jpg */,
 				60FFF2DA1DECD4FD00835D51 /* opener.jpg */,
+				60D5431D1EDB7093003A90BA /* I1.jpg */,
+				60D5431E1EDB7093003A90BA /* I2.jpg */,
+				60D5431F1EDB7093003A90BA /* P1.jpg */,
+				60D543201EDB7093003A90BA /* P2.jpg */,
+				60D543211EDB7093003A90BA /* S1.jpg */,
+				60D543221EDB7093003A90BA /* S2.jpg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -418,6 +453,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D543171EDB446C003A90BA /* b.jpeg in Resources */,
+				60D543241EDB7093003A90BA /* I2.jpg in Resources */,
 				602FF9081DECA73F007F29EB /* LaunchScreen.storyboard in Resources */,
 				602FF92A1DECA7D5007F29EB /* search.png in Resources */,
 				602FF9201DECA7D5007F29EB /* facebook.png in Resources */,
@@ -426,16 +463,24 @@
 				602FF9241DECA7D5007F29EB /* Options.png in Resources */,
 				602FF9261DECA7D5007F29EB /* Personal.jpeg in Resources */,
 				602FF9211DECA7D5007F29EB /* Home.png in Resources */,
+				60D543261EDB7093003A90BA /* P2.jpg in Resources */,
+				60D5432B1EDB7956003A90BA /* ou.jpeg in Resources */,
+				60D543231EDB7093003A90BA /* I1.jpg in Resources */,
 				602FF9051DECA73F007F29EB /* Assets.xcassets in Resources */,
+				60D543271EDB7093003A90BA /* S1.jpg in Resources */,
 				605BE31B1E80DC4F00E55BBB /* pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg in Resources */,
 				605922D11E51AE2D00B313AD /* pizza1.png in Resources */,
+				60D5431C1EDB5DDA003A90BA /* mong-kok-area-2.jpg in Resources */,
 				605922D21E51AE2D00B313AD /* pizza2.jpg in Resources */,
 				602FF9231DECA7D5007F29EB /* menu.png in Resources */,
 				602FF9251DECA7D5007F29EB /* Orderr.png in Resources */,
 				60ABC3161E5C669700165DB2 /* GoogleService-Info.plist in Resources */,
+				60D543281EDB7093003A90BA /* S2.jpg in Resources */,
+				60D5432C1EDB7956003A90BA /* PE.jpg in Resources */,
 				60FFF2DB1DECD4FD00835D51 /* opener.jpg in Resources */,
 				602FF9221DECA7D5007F29EB /* Location.png in Resources */,
 				60FFF2D91DECD05900835D51 /* chickpea-pizza-pate-0074.jpg in Resources */,
+				60D543251EDB7093003A90BA /* P1.jpg in Resources */,
 				602FF9001DECA73F007F29EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +568,7 @@
 				60FFF2C31DECAD5300835D51 /* YourOrdersViewController.m in Sources */,
 				602FF9481DECA7EA007F29EB /* SBJsonStreamParser.m in Sources */,
 				602FF9501DECA7EA007F29EB /* SBJsonUTF8Stream.m in Sources */,
+				60D5431A1EDB4716003A90BA /* FoodTypeViewController.m in Sources */,
 				60FFF2C61DECAD8000835D51 /* PersonalViewController.m in Sources */,
 				602FF9511DECA7EA007F29EB /* SBJsonWriter.m in Sources */,
 				60FFF2C91DECAD9600835D51 /* LocationsViewController.m in Sources */,

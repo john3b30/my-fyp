@@ -10,7 +10,10 @@
 #import "SWRevealViewController.h"
 #import <CoreLocation/CoreLocation.h>
 
-@interface LocationsViewController : UIViewController
+
+@interface LocationsViewController : UIViewController <CLLocationManagerDelegate>
+    
+
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (nonatomic,retain) CLLocationManager *locationManager;
 @end

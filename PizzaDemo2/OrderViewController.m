@@ -18,7 +18,7 @@
 @end
 
 @implementation OrderViewController
-@synthesize pizzatype,sauce,ingredient1,ingredient2,downpicker1,downpicker2,downpicker3,downpicker4,Price;
+@synthesize pizzatype,sauce,ingredient1,ingredient2,downpicker1,downpicker2,downpicker3,downpicker4,Price,Location;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -34,7 +34,7 @@
     self.title = @"Order";
    // [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"back.jpg"]]];
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:@"b.jpeg"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
@@ -82,12 +82,18 @@
                                {
                                    NSString *Identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
                                    
+                                   NSDate * now = [NSDate date];
+                                   NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+                                   [outputFormatter setDateFormat:@"HH:mm:ss"];
+                                   NSString *newDateString = [outputFormatter stringFromDate:now];
+                                   
                                    [[[[_ref child:Identifier]  child:_CustomerName.text] child:@"pizzatype" ]setValue:pizzatype.text];
                                    [[[[_ref child:Identifier]  child:_CustomerName.text] child:@"sauce" ]setValue:sauce.text];
                                    [[[[_ref child:Identifier]  child:_CustomerName.text] child:@"ingredient1" ]setValue:ingredient1.text];
                                    [[[[_ref child:Identifier]  child:_CustomerName.text] child:@"ingredient2" ]setValue:ingredient2.text];
                                    [[[[_ref child:Identifier]  child:_CustomerName.text] child:@"price" ]setValue:Price.text];
-                                   [[[[_ref child:Identifier]  child:_CustomerName.text] child:@"ordernumber" ]setValue:Identifier];
+                                   [[[[_ref child:Identifier]  child:_CustomerName.text] child:@"ordernumber" ]setValue:[Identifier stringByAppendingString:newDateString]];
+                                   [[[[_ref child:Identifier]  child:_CustomerName.text] child:@"location"]setValue:Location.text ];
                                    [self performSegueWithIdentifier:@"ViewOrder" sender:self];
                                }];
     
@@ -127,6 +133,7 @@
     NSMutableArray* sauceArray = [[NSMutableArray alloc] init];
     NSMutableArray* ingredient1Array = [[NSMutableArray alloc] init];
     NSMutableArray* ingredient2Array = [[NSMutableArray alloc] init];
+    NSMutableArray* locationArray = [[NSMutableArray alloc]init];
     
     
     
@@ -140,12 +147,21 @@
     
     
     [ingredient1Array addObject:@"$5 sausage"];
-    [ingredient1Array addObject:@"$6 chinese"];
+    [ingredient1Array addObject:@"$6 cheese"];
     
     
     
     [ingredient2Array addObject:@"$5 sausage"];
-    [ingredient2Array addObject:@"$6 chinese"];
+    [ingredient2Array addObject:@"$6 cheese"];
+    
+    [locationArray addObject:@"Mong Kok"];
+    [locationArray addObject:@"Open University"];
+    [locationArray addObject:@"Prince Edward"];
+    [locationArray addObject:@"Central"];
+    [locationArray addObject:@"Tsim Sha Tsui"];
+    [locationArray addObject:@"Kwai Fong"];
+    [locationArray addObject:@"Kwun Tong"];
+    [locationArray addObject:@"Kowloon Tong"];
     
     
     
@@ -158,7 +174,7 @@
     self.downpicker2 = [[DownPicker alloc] initWithTextField:self.sauce withData:sauceArray];
     self.downpicker3 = [[DownPicker alloc] initWithTextField:self.ingredient1 withData:ingredient1Array];
     self.downpicker4 = [[DownPicker alloc] initWithTextField:self.ingredient2 withData:ingredient2Array];
-    
+    self.downpicker5 = [[DownPicker alloc] initWithTextField:self.Location withData:locationArray];
 }
 
 -(IBAction)Counter:(id)sender{
@@ -185,7 +201,7 @@
                             Price.text = @"$76";
                         }
                     }else{
-                        if([ingredient2.text isEqualToString:@"$6 chinese"]){
+                        if([ingredient2.text isEqualToString:@"$6 cheese"]){
                             Price.text = @"$77";
                         }else if([ingredient2.text isEqualToString:@"$5 sausage"]) {
                             Price.text = @"$76";
@@ -206,7 +222,7 @@
                             Price.text = @"$74";
                         }
                     }else{
-                        if([ingredient2.text isEqualToString:@"$6 chinese"]){
+                        if([ingredient2.text isEqualToString:@"$6 cheese"]){
                             Price.text = @"$75";
                         }else if([ingredient2.text isEqualToString:@"$5 sausage"]) {
                             Price.text = @"$74";
@@ -231,7 +247,7 @@
                             Price.text = @"$86";
                         }
                     }else{
-                        if([ingredient2.text isEqualToString:@"$6 chinese"]){
+                        if([ingredient2.text isEqualToString:@"$6 cheese"]){
                             Price.text = @"$87";
                         }else if([ingredient2.text isEqualToString:@"$5 sausage"]) {
                             Price.text = @"$86";
@@ -252,7 +268,7 @@
                             Price.text = @"$84";
                         }
                     }else{
-                        if([ingredient2.text isEqualToString:@"$6 chinese"]){
+                        if([ingredient2.text isEqualToString:@"$6 cheese"]){
                             Price.text = @"$85";
                         }else if([ingredient2.text isEqualToString:@"$5 sausage"]) {
                             Price.text = @"$84";

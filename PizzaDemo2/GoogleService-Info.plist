@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>240492124783-r3fld2l8snbnag9ghf7np845c73249e9.apps.googleusercontent.com</string>
+	<string>177722841275-it8754j3sbnotk7ruqvpcdg8mevhb86m.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.240492124783-r3fld2l8snbnag9ghf7np845c73249e9</string>
+	<string>com.googleusercontent.apps.177722841275-it8754j3sbnotk7ruqvpcdg8mevhb86m</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCF2X-ydgeBNpHlPgF2urfzLiZb2eUNgOo</string>
+	<string>AIzaSyBr-Q2PFcHv1bkR97dd7b-iEbg6WSuU4XQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>240492124783</string>
+	<string>177722841275</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>chuen.com.PizzaDemo2</string>
 	<key>PROJECT_ID</key>
-	<string>pizzaapp-5c819</string>
+	<string>pizzademo-30aa9</string>
 	<key>STORAGE_BUCKET</key>
-	<string>pizzaapp-5c819.appspot.com</string>
+	<string>pizzademo-30aa9.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:240492124783:ios:90202baf412e2c89</string>
+	<string>1:177722841275:ios:90202baf412e2c89</string>
 	<key>DATABASE_URL</key>
-	<string>https://pizzaapp-5c819.firebaseio.com</string>
+	<string>https://pizzademo-30aa9.firebaseio.com</string>
 </dict>
 </plist>

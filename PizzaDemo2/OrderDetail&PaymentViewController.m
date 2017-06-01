@@ -16,14 +16,16 @@
 @property (strong, nonatomic) FIRDatabaseReference *ref;
 //- (IBAction)PaymentButton:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UILabel *pizzatypeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 //@property (nonatomic) BOOL *Payornot;
 @end
 
 @implementation OrderDetail_PaymentViewController{
-    NSDictionary *post;
+    id post;
     NSArray *OrderDetail;
-  
+    //NSDictionary *postDict;
+    //NSMutableArray *postArray;
     
 }
 
@@ -33,7 +35,7 @@
  
     self.title = UserName;
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:@"b.jpeg"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
@@ -47,15 +49,18 @@
      NSString *Identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 
     [[_ref child:Identifier]observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        
         post = snapshot.value;
-    
+        
+        
+        //NSDictionary *UserDict=[post valueForKeyPath:UserName][0];
+        //_pizzatypeLabel.text= pizzatypeString;
+        //OrderDetail = [userOrderDict allValues];
+        if([post isMemberOfClass:[NSNull class]]){
+        }
+        else{
         OrderDetail= [post allValues];
-        /*for (id object in OrderDetail){
-            NSString *ID = [object objectForKey:@"ordernumber"];
-            if( ID == Identifier){
-                _imageView.image = [UIImage mdQRCodeForString:Identifier size:_imageView.bounds.size.width fillColor:[UIColor darkGrayColor]];}
-            
-        }*/
+    
         for (id element in OrderDetail) {
             UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(150, 30 + 10, 200, 200)];
             label.text = [element objectForKey:@"pizzatype"];
@@ -63,38 +68,46 @@
             [label setTextColor:[UIColor blueColor]];
             [self.view addSubview:label];
             
-            UILabel *labelTwo = [[UILabel alloc]initWithFrame:CGRectMake(150, 80 + 10, 200, 200)];
-            labelTwo.text = [element objectForKey:@"sauce"];
-            [labelTwo setFont:[UIFont boldSystemFontOfSize:16]];
-            [labelTwo setTextColor:[UIColor blueColor]];
-            [self.view addSubview:labelTwo];
+            UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake(150, 80 + 10, 200, 200)];
+            label2.text = [element objectForKey:@"sauce"];
+            [label2 setFont:[UIFont boldSystemFontOfSize:16]];
+            [label2 setTextColor:[UIColor blueColor]];
+            [self.view addSubview:label2];
             
-            UILabel *labelThree = [[UILabel alloc]initWithFrame:CGRectMake(150, 130+ 10, 200, 200)];
-            labelThree.text = [element objectForKey:@"ingredient1"];
-            [labelThree setFont:[UIFont boldSystemFontOfSize:16]];
-            [labelThree setTextColor:[UIColor blueColor]];
-            [self.view addSubview:labelThree];
+            UILabel *label3 = [[UILabel alloc]initWithFrame:CGRectMake(150, 130+ 10, 200, 200)];
+            label3.text = [element objectForKey:@"ingredient1"];
+            [label3 setFont:[UIFont boldSystemFontOfSize:16]];
+            [label3 setTextColor:[UIColor blueColor]];
+            [self.view addSubview:label3];
             
-            UILabel *labelFour = [[UILabel alloc]initWithFrame:CGRectMake(150, 180 + 10, 200, 200)];
-            labelFour.text = [element objectForKey:@"ingredient2"];
-            [labelFour setFont:[UIFont boldSystemFontOfSize:16]];
-            [labelFour setTextColor:[UIColor blueColor]];
-            [self.view addSubview:labelFour];
+            UILabel *label4 = [[UILabel alloc]initWithFrame:CGRectMake(150, 180 + 10, 200, 200)];
+            label4.text = [element objectForKey:@"ingredient2"];
+            [label4 setFont:[UIFont boldSystemFontOfSize:16]];
+            [label4 setTextColor:[UIColor blueColor]];
+            [self.view addSubview:label4];
             
-            UILabel *labelFive = [[UILabel alloc]initWithFrame:CGRectMake(150, 230+ 10, 200, 200)];
-            labelFive.text = [element objectForKey:@"price"];
-            [labelFive setFont:[UIFont boldSystemFontOfSize:16]];
-            [labelFive setTextColor:[UIColor blueColor]];
-            [self.view addSubview:labelFive];
+            UILabel *label5 = [[UILabel alloc]initWithFrame:CGRectMake(150, 230+ 10, 200, 200)];
+            label5.text = [element objectForKey:@"price"];
+            [label5 setFont:[UIFont boldSystemFontOfSize:16]];
+            [label5 setTextColor:[UIColor blueColor]];
+            [self.view addSubview:label5];
+            
+            UILabel *label6 = [[UILabel alloc]initWithFrame:CGRectMake(150, 280+ 10, 200, 200)];
+            label6.text = [element objectForKey:@"location"];
+            [label6 setFont:[UIFont boldSystemFontOfSize:16]];
+            [label6 setTextColor:[UIColor blueColor]];
+            [self.view addSubview:label6];
             
             NSString * orderno = [element objectForKey:@"ordernumber"];
             _imageView.image = [UIImage mdQRCodeForString:orderno size:_imageView.bounds.size.width fillColor:[UIColor darkGrayColor]];
             
          
 
-            
+        }
         }
     }];
+    //NSString * pizzatypeString = [[postDict valueForKeyPath:UserName][0]objectForKey:@"pizzatype"];
+    //_pizzatypeLabel.text= pizzatypeString;
 
 }
 

@@ -15,11 +15,14 @@
 @property (strong,nonatomic) DownPicker* downpicker2;
 @property (strong,nonatomic) DownPicker* downpicker3;
 @property (strong,nonatomic) DownPicker* downpicker4;
+@property (strong,nonatomic) DownPicker* downpicker5;
 
 @property (strong,nonatomic) IBOutlet UITextField* pizzatype;
 @property (strong,nonatomic) IBOutlet UITextField* sauce;
 @property (strong,nonatomic) IBOutlet UITextField* ingredient1;
 @property (strong,nonatomic) IBOutlet UITextField* ingredient2;
+@property (strong,nonatomic) IBOutlet UITextField* Location;
+
 
 @property (strong,nonatomic) IBOutlet UILabel* Price;
 -(IBAction)Counter:(id)sender;

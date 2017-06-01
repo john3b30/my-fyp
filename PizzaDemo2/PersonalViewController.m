@@ -29,7 +29,7 @@
     self.title = @"Personals";
     //[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"back.jpg"]]];
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"pizza-margherita-white-background-close-to-ingredients-like-tomatoes-olive-oil-cheese-basil-pepper-kitchen-tools-34466749.jpg"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:@"b.jpeg"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
@@ -50,53 +50,81 @@
     
     [[_ref child:Identifier]observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         post = snapshot.value;
-        if(post != nil){
+        if([post isMemberOfClass:[NSNull class]]){
+          
+
+            [self Error:@"There is no record" :@"Click 'OK' to back home page"];
+        }
+            
+            
+        
+        else{
             OrderDetail= [post allValues];
-        /*for (id object in OrderDetail){
-         NSString *ID = [object objectForKey:@"ordernumber"];
-         if( ID == Identifier){
-         _imageView.image = [UIImage mdQRCodeForString:Identifier size:_imageView.bounds.size.width fillColor:[UIColor darkGrayColor]];}
-         
-         }*/
-        for (id element in OrderDetail) {
-            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(150, 30 + 10, 200, 200)];
-            label.text = [element objectForKey:@"pizzatype"];
-            [label setFont:[UIFont boldSystemFontOfSize:16]];
-            [label setTextColor:[UIColor blueColor]];
-            [self.view addSubview:label];
+          
+            for (id element in OrderDetail) {
+                UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(150, 30 + 10, 200, 200)];
+                label.text = [element objectForKey:@"pizzatype"];
+                [label setFont:[UIFont boldSystemFontOfSize:16]];
+                [label setTextColor:[UIColor blueColor]];
+                [self.view addSubview:label];
+                
+                UILabel *labelTwo = [[UILabel alloc]initWithFrame:CGRectMake(150, 80 + 10, 200, 200)];
+                labelTwo.text = [element objectForKey:@"sauce"];
+                [labelTwo setFont:[UIFont boldSystemFontOfSize:16]];
+                [labelTwo setTextColor:[UIColor blueColor]];
+                [self.view addSubview:labelTwo];
+                
+                UILabel *labelThree = [[UILabel alloc]initWithFrame:CGRectMake(150, 130+ 10, 200, 200)];
+                labelThree.text = [element objectForKey:@"ingredient1"];
+                [labelThree setFont:[UIFont boldSystemFontOfSize:16]];
+                [labelThree setTextColor:[UIColor blueColor]];
+                [self.view addSubview:labelThree];
+                
+                UILabel *labelFour = [[UILabel alloc]initWithFrame:CGRectMake(150, 180 + 10, 200, 200)];
+                labelFour.text = [element objectForKey:@"ingredient2"];
+                [labelFour setFont:[UIFont boldSystemFontOfSize:16]];
+                [labelFour setTextColor:[UIColor blueColor]];
+                [self.view addSubview:labelFour];
+                
+                UILabel *labelFive = [[UILabel alloc]initWithFrame:CGRectMake(150, 230+ 10, 200, 200)];
+                labelFive.text = [element objectForKey:@"price"];
+                [labelFive setFont:[UIFont boldSystemFontOfSize:16]];
+                [labelFive setTextColor:[UIColor blueColor]];
+                [self.view addSubview:labelFive];
+                
+                UILabel *labelSix = [[UILabel alloc]initWithFrame:CGRectMake(150, 280+ 10, 200, 200)];
+                labelSix.text = [element objectForKey:@"location"];
+                [labelSix setFont:[UIFont boldSystemFontOfSize:16]];
+                [labelSix setTextColor:[UIColor blueColor]];
+                [self.view addSubview:labelSix];
+        }
             
-            UILabel *labelTwo = [[UILabel alloc]initWithFrame:CGRectMake(150, 80 + 10, 200, 200)];
-            labelTwo.text = [element objectForKey:@"sauce"];
-            [labelTwo setFont:[UIFont boldSystemFontOfSize:16]];
-            [labelTwo setTextColor:[UIColor blueColor]];
-            [self.view addSubview:labelTwo];
-            
-            UILabel *labelThree = [[UILabel alloc]initWithFrame:CGRectMake(150, 130+ 10, 200, 200)];
-            labelThree.text = [element objectForKey:@"ingredient1"];
-            [labelThree setFont:[UIFont boldSystemFontOfSize:16]];
-            [labelThree setTextColor:[UIColor blueColor]];
-            [self.view addSubview:labelThree];
-            
-            UILabel *labelFour = [[UILabel alloc]initWithFrame:CGRectMake(150, 180 + 10, 200, 200)];
-            labelFour.text = [element objectForKey:@"ingredient2"];
-            [labelFour setFont:[UIFont boldSystemFontOfSize:16]];
-            [labelFour setTextColor:[UIColor blueColor]];
-            [self.view addSubview:labelFour];
-            
-            UILabel *labelFive = [[UILabel alloc]initWithFrame:CGRectMake(150, 230+ 10, 200, 200)];
-            labelFive.text = [element objectForKey:@"price"];
-            [labelFive setFont:[UIFont boldSystemFontOfSize:16]];
-            [labelFive setTextColor:[UIColor blueColor]];
-            [self.view addSubview:labelFive];
-            
-            NSString * orderno = [element objectForKey:@"ordernumber"];
-            _imageView.image = [UIImage mdQRCodeForString:orderno size:_imageView.bounds.size.width fillColor:[UIColor darkGrayColor]];
-            
-            
-            
-        }}
+        }
         }];
 }
+
+
+-(void) Error:(NSString*)title1:(NSString*)msg1{
+    UIAlertController *alert1Controller = [UIAlertController
+                                           alertControllerWithTitle:title1
+                                           message:msg1
+                                           preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *GAction = [UIAlertAction
+                              actionWithTitle:NSLocalizedString(@"OK", @"G action")
+                              style:UIAlertActionStyleDefault
+                              handler:^(UIAlertAction *action)
+                              {
+                                  //  [self closeAlertView];
+                                  [self performSegueWithIdentifier:@"GoHome" sender:self];
+                              }];
+    
+    [alert1Controller addAction:GAction];
+    
+    [self presentViewController:alert1Controller animated:YES completion:nil];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

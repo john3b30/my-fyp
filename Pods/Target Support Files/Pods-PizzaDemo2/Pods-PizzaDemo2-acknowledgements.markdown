@@ -34,6 +34,10 @@ Copyright 2016 Google
 
 Copyright 2016 Google
 
+## FirebaseAuth
+
+Copyright 2016 Google
+
 ## FirebaseCore
 
 Copyright 2016 Google
@@ -45,6 +49,14 @@ Copyright 2016 Google
 ## FirebaseInstanceID
 
 Copyright 2016 Google
+
+## FirebaseMessaging
+
+Copyright 2016 Google
+
+## GoogleIPhoneUtilities
+
+Copyright 2015 Google Inc.
 
 ## GoogleInterchangeUtilities
 
@@ -60,6 +72,10 @@ part of an "About" menu item, is recommended.
 You can get the attribution text by making a call to
 GMSServices.openSourceLicenseInfo().
 
+
+## GoogleNetworkingUtilities
+
+Copyright 2016 Google
 
 ## GoogleSymbolUtilities
 

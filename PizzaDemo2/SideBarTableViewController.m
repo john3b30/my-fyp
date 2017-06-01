@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    menuItems = @[@"title", @"Home", @"YourOrders", @"Personals", @"Locations", @"Order"];
+    menuItems = @[@"title", @"Home", @"YourOrders", @"Personals", @"Locations", @"Order",@"Foodtype"];
     
 }
 

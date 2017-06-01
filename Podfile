@@ -5,7 +5,8 @@ pod 'DownPicker', '~>0.1'
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'GoogleMaps'
-
+pod 'Firebase/Auth'
+pod 'Firebase/Messaging'
 end
 
 

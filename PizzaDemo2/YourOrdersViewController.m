@@ -13,6 +13,7 @@
 @property (strong, nonatomic) FIRDatabaseReference *ref;
 @property FIRDatabaseHandle *databaseHandle;
 - (IBAction)Delete:(id)sender;
+- (IBAction)Refresh:(id)sender;
 
 @end
 
@@ -42,26 +43,31 @@
         [self.sidebarButton setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];}
    
-    Orderlist = @[];
-     self.ref = [[FIRDatabase database] reference];
+    
+    self.ref = [[FIRDatabase database] reference];
     NSString *Identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     
     [[_ref child:Identifier] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        
         postDict = snapshot.value;
-     
-        if(postDict == NULL ){
-            [self performSegueWithIdentifier:@"backOrder" sender:self];
-
+        
+        if([postDict isMemberOfClass:[NSNull class]]){
+            // [self performSegueWithIdentifier:@"backOrder" sender:self];
+           // postDict = [ [ NSDictionary alloc ] init ];
+            Orderlist = @[];
+            [self.tableView reloadData];
+            
         }
         else{
             Orderlist = [postDict allKeys];
-        
+            
             [self.tableView reloadData];
         }
-       
+        
         
         
     }];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,14 +91,14 @@
     
 }
 
-/*- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
    // NSInteger row = [indexPath row];
     //OrderDetail_PaymentViewController *detailViewController = [[OrderDetail_PaymentViewController alloc] init];
-    OrderDetail_PaymentViewController *Controller= [[OrderDetail_PaymentViewController alloc] initWithNibName:@"OrderDetail_PaymentViewController" bundle:nil];
-    NSString *hi= [Orderlist objectAtIndex:indexPath.row];
-    Controller.UserName = hi;
-    [self presentViewController:Controller animated:YES completion:NULL];
+    //OrderDetail_PaymentViewController *Controller= [[OrderDetail_PaymentViewController alloc] initWithNibName:@"OrderDetail_PaymentViewController" bundle:nil];
+    //NSString *hi= [Orderlist objectAtIndex:indexPath.row];
+    //Controller.UserName = hi;
+    //[self presentViewController:Controller animated:YES completion:NULL];
    //User= Orderlist[indexPath.row];
 
   
@@ -103,7 +109,19 @@
 //[self.navigationController pushViewController:detailViewController animated:YES];
 //[detailViewController release];
     
-}*/
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *username = cell.textLabel.text;
+    [self performSegueWithIdentifier:@"showDetailSegue" sender:username];
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"showDetailSegue"]){
+        OrderDetail_PaymentViewController *controller = (OrderDetail_PaymentViewController *)segue.destinationViewController;
+        controller.UserName = sender;
+        
+    }
+}
 /*
 #pragma mark - Navigation
 
@@ -154,6 +172,28 @@
                                handler:^(UIAlertAction *action)
                                {
                                    [_ref removeValue];
+                                   
+                                   NSString *Identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+                                   [[_ref child:Identifier] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+                                       
+                                       postDict = snapshot.value;
+                                       
+                                       if([postDict isMemberOfClass:[NSNull class]]){
+                                           // [self performSegueWithIdentifier:@"backOrder" sender:self];
+                                           // postDict = [ [ NSDictionary alloc ] init ];
+                                           Orderlist = @[];
+                                           [self.tableView reloadData];
+                                           
+                                       }
+                                       else{
+                                           Orderlist = [postDict allKeys];
+                                           
+                                           [self.tableView reloadData];
+                                       }
+                                       
+                                       
+                                       
+                                   }];
                                }];
     
     [alertController addAction:cancelAction];
@@ -163,16 +203,35 @@
     
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"showDetailSegue"]){
-        OrderDetail_PaymentViewController *controller = (OrderDetail_PaymentViewController *)segue.destinationViewController;
-        controller.UserName = @"John";
-     
-    }
-}
+
 
 - (IBAction)Delete:(id)sender {
     [self confirmDel:@"Cancel Order Warning!" :@"If you already paid for the order,you can't refund after cancel the order, click 'OK' to cancel the order or click 'Back' to cancel the action."];
+    
+}
+
+- (IBAction)Refresh:(id)sender{
+    NSString *Identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    [[_ref child:Identifier] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        
+        postDict = snapshot.value;
+        
+        if([postDict isMemberOfClass:[NSNull class]]){
+            // [self performSegueWithIdentifier:@"backOrder" sender:self];
+            // postDict = [ [ NSDictionary alloc ] init ];
+            Orderlist = @[];
+            [self.tableView reloadData];
+            
+        }
+        else{
+            Orderlist = [postDict allKeys];
+            
+            [self.tableView reloadData];
+        }
+        
+        
+        
+    }];
     
 }
 @end

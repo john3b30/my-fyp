@@ -22,7 +22,7 @@
 {
     [FIRApp configure];
     // Add any custom logic here.
-    [GMSServices provideAPIKey:@"AIzaSyAmmrqVUAfCvVxWTiNh-ihEqf4s-xmAzJg"];
+    [GMSServices provideAPIKey:@"AIzaSyCgeAptvKutk1TfPFo3_Jv0MB1RNUDaqQQ"];
     return YES;
     
 }

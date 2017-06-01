@@ -15,4 +15,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *OrderDetail;
 @property (weak, nonatomic) IBOutlet UILabel *OrderName;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+
 @end
